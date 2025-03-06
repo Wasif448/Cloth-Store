@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Phone Shop</title>
+  <style>
+    /* Reset for all elements */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body and main background */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    /* Header Style */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Navigation menu */
+    nav ul {
+      list-style-type: none;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Product Section */
+    .products {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .product {
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ddd;
+      width: 30%;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product h3 {
+      margin: 15px 0;
+      font-size: 20px;
+    }
+
+    .product p {
+      color: #555;
+      font-size: 16px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #333;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .buy-button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+      border-radius: 5px;
+    }
+
+    .buy-button:hover {
+      background-color: #555;
+    }
+
+    /* Footer Style */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Phone Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Product Section -->
+  <section class="products">
+    <div class="product">
+      <img src="phone1.jpg" alt="Phone Model 1">
+      <h3>Iphone 14 max</h3>
+      <p>Best features with great performance.</p>
+      <p class="price">$599</p>
+      <button class="buy-button">Buy Now</button>
+    </div>
+    <div class="product">
+      <img src="phone2.jpg" alt="Phone Model 2">
+      <h3>Samsung s24</h3>
+      <p>Stylish design and reliable performance.</p>
+      <p class="price">$699</p>
+      <button class="buy-button">Buy Now</button>
+    </div>
+    <div class="product">
+      <img src="phone3.jpg" alt="Phone Model 3">
+      <h3>Nokia 302</h3>
+      <p>Exceptional camera and long battery life.</p>
+      <p class="price">$799</p>
+      <button class="buy-button">Buy Now</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Phone Shop. All rights reserved.</p>
+  </footer>
+
+</body>
+    </html>
