@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Clothing Blog</h1>
+            <p class="text-lg mt-2">Stay updated with the latest fashion trends</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Blog Post 1 -->
+            <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="https://via.placeholder.com/400x200" alt="Fashion Image" class="w-full">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Summer Fashion Trends 2023</h2>
+                    <p class="text-gray-600 mb-4">Discover the hottest summer styles to keep you cool and stylish this season.</p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline" onclick="showAlert('Summer Fashion Trends 2023')">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="https://via.placeholder.com/400x200" alt="Fashion Image" class="w-full">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">10 Must-Have Accessories</h2>
+                    <p class="text-gray-600 mb-4">Complete your outfit with these essential accessories for every wardrobe.</p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline" onclick="showAlert('10 Must-Have Accessories')">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="https://via.placeholder.com/400x200" alt="Fashion Image" class="w-full">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Winter Wardrobe Essentials</h2>
+                    <p class="text-gray-600 mb-4">Stay warm and fashionable with these winter wardrobe must-haves.</p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline" onclick="showAlert('Winter Wardrobe Essentials')">Read More</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        function showAlert(title) {
+            alert('You clicked on: ' + title);
+        }
+
+        function logMessage(message) {
+            console.log('Log: ' + message);
+        }
+
+        // Example usage of logMessage
+        logMessage('Blog page loaded successfully.');
+    </script>

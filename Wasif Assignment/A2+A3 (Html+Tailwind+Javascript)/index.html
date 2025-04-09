@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Cloth Store</h1>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About Us</a></li>
+                <li><a href="shop.html" class="hover:underline">Shop</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+                <li><a href="blog.html" class="hover:underline">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-200 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Welcome to Cloth Store</h2>
+            <p class="text-lg mb-6">We provide the best solutions for your needs.</p>
+            <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700" onclick="showAlert()">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-8">Our Features</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded shadow">
+                    <h4 class="text-xl font-bold mb-2">Feature 1</h4>
+                    <p>Detail about feature 1.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h4 class="text-xl font-bold mb-2">Feature 2</h4>
+                    <p>Detail about feature 2.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h4 class="text-xl font-bold mb-2">Feature 3</h4>
+                    <p>Detail about feature 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 My Website. All rights reserved.</p>
+            <button class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-200" onclick="displayCurrentYear()">Show Current Year</button>
+        </div>
+    </footer>
+
+    <script>
+        function showAlert() {
+            alert("Welcome to Cloth Store! Let's get started.");
+        }
+
+        function displayCurrentYear() {
+            const year = new Date().getFullYear();
+            alert("The current year is " + year);
+        }
+    </script>
+
+</body>
+</html>
