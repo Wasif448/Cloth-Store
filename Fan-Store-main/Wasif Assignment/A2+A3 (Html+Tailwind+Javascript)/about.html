@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fan Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Function to display an alert message
+        function showWelcomeMessage() {
+            alert("Welcome to our Fan Store!");
+        }
+
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            document.body.classList.toggle('bg-gray-800');
+            document.body.classList.toggle('text-white');
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100 text-gray-800" onload="showWelcomeMessage()">
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-3xl font-bold md:text-4xl">About Our Fan Store</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto my-8 px-4">
+        <section class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 md:text-3xl">Who We Are</h2>
+            <p class="text-gray-700 leading-relaxed text-sm md:text-base">
+                Welcome to our fan store! We are passionate about providing high-quality, stylish, and affordable fans
+                for every need. Our mission is to keep you cool and comfortable while adding a touch of elegance to your space.
+            </p>
+        </section>
+
+        <section class="bg-white shadow-md rounded-lg p-6 mt-6">
+            <h2 class="text-2xl font-semibold mb-4 md:text-3xl">Our Values</h2>
+            <ul class="list-disc list-inside text-gray-700 text-sm md:text-base">
+                <li>Quality: We ensure every fan meets the highest standards of performance and durability.</li>
+                <li>Style: Stay modern with our carefully designed fan collections.</li>
+                <li>Affordability: Cooling solutions for everyone, without breaking the bank.</li>
+                <li>Sustainability: We are committed to energy-efficient and eco-friendly practices.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white shadow-md rounded-lg p-6 mt-6">
+            <h2 class="text-2xl font-semibold mb-4 md:text-3xl">Our Journey</h2>
+            <p class="text-gray-700 leading-relaxed text-sm md:text-base">
+                Since our inception, we have been dedicated to creating a unique shopping experience for our customers. From
+                humble beginnings to becoming a trusted name in cooling solutions, we are proud to serve our community with love and care.
+            </p>
+        </section>
+
+        <div class="text-center">
+            <button onclick="toggleDarkMode()" class="bg-blue-600 text-white px-4 py-2 rounded mt-6 hover:bg-blue-700 transition">
+                Toggle Dark Mode
+            </button>
+        </div>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-4 mt-8">
+        <div class="container mx-auto text-center px-4">
+            <p class="text-sm md:text-base">&copy; 2023 Fan Store. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
